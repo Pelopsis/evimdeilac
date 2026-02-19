@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evimde İlaç</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Evimde <span>İlaç</span></div>
+    <div class="nav-links">
+        <a href="/">Ana Sayfa</a>
+        <a href="#">Nasıl Çalışır?</a>
+        <a href="#" class="nav-btn">Giriş</a>
+    </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+<footer class="footer">
+    <p>Evimde İlaç bir eczane değildir. Satış işlemleri anlaşmalı eczaneler tarafından yapılır.</p>
+</footer>
+
+</body>
+</html>
