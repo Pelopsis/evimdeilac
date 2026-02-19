@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 px-6">
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center px-6 text-center">
 
-    <div class="max-w-4xl text-center">
+    <div class="max-w-4xl">
 
         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
             İlacın için dışarı çıkma.
-            <span class="text-red-500">Kapına gelsin.</span>
+            <span class="text-[#43A047]">Kapına gelsin.</span>
         </h1>
 
         <p class="mt-6 text-lg md:text-xl text-gray-300">
@@ -16,29 +17,85 @@
         </p>
 
         <div class="mt-10 flex flex-col md:flex-row gap-4 justify-center">
-            <a href="#" class="bg-red-500 hover:bg-red-600 px-8 py-3 rounded-full text-lg font-semibold transition shadow-lg">
+            <a href="#" 
+               class="bg-[#43A047] hover:bg-green-600 px-8 py-3 rounded-full text-lg font-semibold transition shadow-lg">
                 Sipariş Oluştur
             </a>
 
-            <a href="#" class="border border-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition">
+            <a href="#" 
+               class="border border-[#1E88E5] px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#1E88E5] transition">
                 Nasıl Çalışır?
             </a>
         </div>
 
-        <!-- MOCK CARD -->
-        <div class="mt-16 bg-slate-900 p-8 rounded-2xl shadow-2xl text-left max-w-xl mx-auto">
-            <h3 class="text-xl font-bold mb-4 text-red-400">
-                3 Adımda Teslimat
-            </h3>
-            <ul class="space-y-3 text-gray-300">
-                <li>✔ Reçete kodunu gir</li>
-                <li>✔ Eczane onaylasın</li>
-                <li>✔ Kurye teslim etsin</li>
-            </ul>
+    </div>
+
+</section>
+
+
+<!-- ÖZELLİKLER -->
+<section class="py-20 bg-[#0F2A40] px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+
+        <div class="bg-[#0B1C2D] p-8 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-bold text-[#1E88E5] mb-3">Hızlı Teslimat</h3>
+            <p class="text-gray-300">Anlaşmalı eczanelerden aynı gün teslimat.</p>
+        </div>
+
+        <div class="bg-[#0B1C2D] p-8 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-bold text-[#1E88E5] mb-3">Güvenli İşlem</h3>
+            <p class="text-gray-300">Reçeteli ürünlerde doğrulama sistemi.</p>
+        </div>
+
+        <div class="bg-[#0B1C2D] p-8 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-bold text-[#1E88E5] mb-3">Yerel Destek</h3>
+            <p class="text-gray-300">Yerel eczanelerle doğrudan iş birliği.</p>
         </div>
 
     </div>
+</section>
 
+
+<!-- NASIL ÇALIŞIR -->
+<section class="py-20 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">
+            3 Adımda Teslimat
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <div>
+                <div class="text-4xl font-bold text-[#43A047]">1</div>
+                <p class="mt-3 text-gray-300">Reçete kodunu gir.</p>
+            </div>
+
+            <div>
+                <div class="text-4xl font-bold text-[#43A047]">2</div>
+                <p class="mt-3 text-gray-300">Eczane onaylasın.</p>
+            </div>
+
+            <div>
+                <div class="text-4xl font-bold text-[#43A047]">3</div>
+                <p class="mt-3 text-gray-300">Kurye teslim etsin.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="py-20 bg-gradient-to-r from-[#1E88E5] to-[#43A047] text-center px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Sağlığını erteleme.
+    </h2>
+    <a href="#" 
+       class="bg-white text-black px-8 py-3 rounded-full font-semibold hover:opacity-90 transition">
+        Hemen Sipariş Ver
+    </a>
 </section>
 
 {% endblock %}
