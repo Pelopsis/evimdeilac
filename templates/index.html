@@ -1,52 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="hero">
+<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 px-6">
 
-    <div class="hero-container">
+    <div class="max-w-4xl text-center">
 
-        <div class="hero-left">
-            <h1>
-                İlacın için dışarı çıkma.
-                <span>Kapına gelsin.</span>
-            </h1>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+            İlacın için dışarı çıkma.
+            <span class="text-red-500">Kapına gelsin.</span>
+        </h1>
 
-            <p>
-                Yerel eczanelerle iş birliği içinde
-                reçeteli ve reçetesiz ürünleri
-                hızlı ve güvenli şekilde teslim ediyoruz.
-            </p>
+        <p class="mt-6 text-lg md:text-xl text-gray-300">
+            Yerel eczanelerle iş birliği içinde reçeteli ve reçetesiz ürünleri
+            hızlı ve güvenli şekilde teslim ediyoruz.
+        </p>
 
-            <div class="hero-buttons">
-                <a href="#" class="btn-main">Sipariş Oluştur</a>
-                <a href="#" class="btn-outline">Nasıl Çalışır?</a>
-            </div>
+        <div class="mt-10 flex flex-col md:flex-row gap-4 justify-center">
+            <a href="#" class="bg-red-500 hover:bg-red-600 px-8 py-3 rounded-full text-lg font-semibold transition shadow-lg">
+                Sipariş Oluştur
+            </a>
+
+            <a href="#" class="border border-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition">
+                Nasıl Çalışır?
+            </a>
         </div>
 
-        <div class="hero-right">
-            <div class="mock-card">
-                <h3>3 Adımda Teslimat</h3>
-                <ul>
-                    <li>Reçete kodunu gir</li>
-                    <li>Eczane onaylasın</li>
-                    <li>Kurye teslim etsin</li>
-                </ul>
-            </div>
+        <!-- MOCK CARD -->
+        <div class="mt-16 bg-slate-900 p-8 rounded-2xl shadow-2xl text-left max-w-xl mx-auto">
+            <h3 class="text-xl font-bold mb-4 text-red-400">
+                3 Adımda Teslimat
+            </h3>
+            <ul class="space-y-3 text-gray-300">
+                <li>✔ Reçete kodunu gir</li>
+                <li>✔ Eczane onaylasın</li>
+                <li>✔ Kurye teslim etsin</li>
+            </ul>
         </div>
 
     </div>
 
-</section>
-
-<section class="why">
-    <h2>Neden Evimde İlaç?</h2>
-
-    <div class="why-grid">
-        <div>✓ Hızlı Teslimat</div>
-        <div>✓ Güvenli İş Birliği</div>
-        <div>✓ Yerel Eczane Desteği</div>
-        <div>✓ Modern Sipariş Sistemi</div>
-    </div>
 </section>
 
 {% endblock %}
